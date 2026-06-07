@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-producthunt",
+  "version": "0.1.0",
+  "description": "Product Hunt MCP — wraps the Product Hunt GraphQL API v2 (api.producthunt.com)",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "producthunt"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-producthunt"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
