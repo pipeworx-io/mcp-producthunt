@@ -1,0 +1,48 @@
+[
+  {
+    "name": "top_launches",
+    "description": "Get today's and recent top Product Hunt launches — new product and startup launches. Use this to see what launched today/recently or which products are trending. Returns name, tagline, vote/comment counts, URLs, and topics. Example: top_launches({ first: 10, order: \"RANKING\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "first": {
+          "type": "number",
+          "description": "Number of launches to return (default 10, max 20)"
+        },
+        "order": {
+          "type": "string",
+          "description": "Sort order: \"RANKING\" (default — trending), \"VOTES\" (most upvoted), or \"NEWEST\" (most recently launched)",
+          "enum": [
+            "RANKING",
+            "VOTES",
+            "NEWEST"
+          ]
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "Optional — your own Product Hunt developer token for higher limits; omit to use the shared Pipeworx key."
+        }
+      }
+    }
+  },
+  {
+    "name": "get_post",
+    "description": "Get full details for a single Product Hunt launch by its slug — description, makers, topics, and vote/comment counts. Use after top_launches to dig into a specific new product / startup launch. Example: get_post({ slug: \"notion\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "slug": {
+          "type": "string",
+          "description": "The Product Hunt post slug (e.g. \"notion\"), from a launch's url/slug."
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "Optional — your own Product Hunt developer token for higher limits; omit to use the shared Pipeworx key."
+        }
+      },
+      "required": [
+        "slug"
+      ]
+    }
+  }
+]
