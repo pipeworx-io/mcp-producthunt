@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-producthunt",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Product Hunt MCP — wraps the Product Hunt GraphQL API v2 (api.producthunt.com)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "producthunt",
     "gatewaySlug": "producthunt",
-    "sourceHash": "v1-66c32ae450018f5f0540d503f50826ae53897556a9421e5600d3abf96b2f93a8",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-8f71e330b69dd2c112c76ca350cf2e9fb015e12673f566fcf1fba80cd65b5efd",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
