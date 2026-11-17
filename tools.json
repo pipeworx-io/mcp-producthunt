@@ -26,7 +26,7 @@
     }
   },
   {
-    "name": "get_post",
+    "name": "producthunt_get_post",
     "description": "Get full details for a single Product Hunt launch by its slug — description, makers, topics, and vote/comment counts. Use after top_launches to dig into a specific new product / startup launch. Example: get_post({ slug: \"notion\" })",
     "inputSchema": {
       "type": "object",
